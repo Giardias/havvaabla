@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Services für globale Unternehmen - Enterprise Architektur, Multilinguale Systeme, Performance Optimierung">
+    
+    <title>Leistungen | GLOBALEX Digital</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>">
+    
+    <!-- Translations FIRST -->
+    <script src="translations.js" defer></script>
+</head>
+<body>
+    <!-- Language Loader -->
+    <div class="language-loader">
+        <div class="loader-content">
+            <div class="loader-logo">◈ GLOBALEX</div>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="loader-text">Initialisiere...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">GLOBALEX</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" data-key="navHome">Start</a>
+                <a href="services.html" data-key="navServices">Leistungen</a>
+                <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                <a href="blog.html" data-key="navBlog">Blog</a>
+                <a href="about.html" data-key="navAbout">Über uns</a>
+                <a href="contact.html" data-key="navContact">Kontakt</a>
+                
+                <div class="language-selector">
+                    <button class="current-lang" id="currentLang">
+                        <span class="flag">🇩🇪</span>
+                        <span>DE</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <button data-lang="de">
+                            <span class="flag">🇩🇪</span>
+                            <span>Deutsch</span>
+                        </button>
+                        <button data-lang="en">
+                            <span class="flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button data-lang="tr">
+                            <span class="flag">🇹🇷</span>
+                            <span>Türkçe</span>
+                        </button>
+                        <button data-lang="ru">
+                            <span class="flag">🇷🇺</span>
+                            <span>Русский</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <h1 data-key="servicesHeroTitle">Premium Services für globale Unternehmen</h1>
+            <p data-key="servicesHeroDesc">Von der Strategie bis zur Implementierung - Wir bieten komplette Lösungen für digitale Souveränität in 43 Ländern.</p>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <main class="services-detailed">
+        <div class="container">
+            <!-- Service 1 -->
+            <div class="service-detail" id="architecture">
+                <div class="service-image">
+                    <div class="team-photo">
+                        <div style="text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem;">🏗️</div>
+                            <div style="font-size: 1.5rem; margin-top: 1rem;" data-key="service1Title">Enterprise Architecture Team</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <h2 data-key="service1DetailTitle">Enterprise Architektur</h2>
+                    <p data-key="service1DetailDesc">Wir entwerfen und implementieren skalierbare, sichere Infrastrukturen für globale Unternehmen. Unsere Architekten mit durchschnittlich 15+ Jahren Erfahrung schaffen Lösungen, die mit Ihrem Unternehmen wachsen.</p>
+                    
+                    <ul class="service-features">
+                        <li data-key="service1Feature1">Skalierbare Microservices-Architektur</li>
+                        <li data-key="service1Feature2">Multi-Cloud Strategie und Implementierung</li>
+                        <li data-key="service1Feature3">DevOps & CI/CD Pipeline Setup</li>
+                        <li data-key="service1Feature4">Security-First Design Prinzipien</li>
+                        <li data-key="service1Feature5">Disaster Recovery & Business Continuity</li>
+                    </ul>
+                    
+                    <div class="service-stats">
+                        <div class="stat">
+                            <div class="number">99.99%</div>
+                            <div class="label" data-key="service1Stat1Label">Uptime Garantie</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">67%</div>
+                            <div class="label" data-key="service1Stat2Label">Schnelleres Scaling</div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary" data-key="serviceBookConsultation">Konsultation buchen →</a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-detail" id="multilingual">
+                <div class="service-image">
+                    <div class="team-photo">
+                        <div style="text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem;">🌍</div>
+                            <div style="font-size: 1.5rem; margin-top: 1rem;" data-key="service2Title">Linguistik & Lokalisierung Team</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <h2 data-key="service2DetailTitle">Multilinguale Systeme</h2>
+                    <p data-key="service2DetailDesc">Mehr als nur Übersetzung - kulturelle Anpassung. Unser Team von 50+ Muttersprachlern und Kultur-Experten sorgt dafür, dass Ihre Anwendung in jedem Markt natürlich wirkt.</p>
+                    
+                    <ul class="service-features">
+                        <li data-key="service2Feature1">Context-Aware AI Übersetzung</li>
+                        <li data-key="service2Feature2">Kulturelle Anpassung & UX-Lokalisierung</li>
+                        <li data-key="service2Feature3">Echtzeit-Content Synchronisation</li>
+                        <li data-key="service2Feature4">Regulatorische Compliance pro Land</li>
+                        <li data-key="service2Feature5">Local Payment & Shipping Integration</li>
+                    </ul>
+                    
+                    <div class="service-stats">
+                        <div class="stat">
+                            <div class="number">12</div>
+                            <div class="label" data-key="service2Stat1Label">Sprachen</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">89%</div>
+                            <div class="label" data-key="service2Stat2Label">Nutzerzufriedenheit</div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary" data-key="serviceBookConsultation">Konsultation buchen →</a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-detail" id="performance">
+                <div class="service-image">
+                    <div class="team-photo">
+                        <div style="text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem;">⚡</div>
+                            <div style="font-size: 1.5rem; margin-top: 1rem;" data-key="service3Title">Performance Engineering Team</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <h2 data-key="service3DetailTitle">Performance Optimierung</h2>
+                    <p data-key="service3DetailDesc">Sub-100ms Ladezeiten weltweit durch intelligentes Edge Computing. Unsere Performance Engineers optimieren jede Anwendung für maximale Geschwindigkeit und Verfügbarkeit.</p>
+                    
+                    <ul class="service-features">
+                        <li data-key="service3Feature1">Global Edge Network Setup</li>
+                        <li data-key="service3Feature2">Advanced Caching Strategien</li>
+                        <li data-key="service3Feature3">Real-Time Performance Monitoring</li>
+                        <li data-key="service3Feature4">Automated Load Testing & Optimization</li>
+                        <li data-key="service3Feature5">CDN & Asset Delivery Optimierung</li>
+                    </ul>
+                    
+                    <div class="service-stats">
+                        <div class="stat">
+                            <div class="number">&lt;100ms</div>
+                            <div class="label" data-key="service3Stat1Label">Ladezeit weltweit</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">43%</div>
+                            <div class="label" data-key="service3Stat2Label">Schneller Time-to-Market</div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary" data-key="serviceBookConsultation">Konsultation buchen →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-key="ctaTitle">Bereit für digitale Transformation?</h2>
+                <p data-key="ctaSubtitle">Lassen Sie uns über Ihre spezifischen Anforderungen sprechen und eine maßgeschneiderte Lösung entwickeln.</p>
+                <a href="contact.html" class="btn btn-primary btn-large" data-key="ctaButton">Projekt besprechen →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">◈ GLOBALEX</div>
+                    <p class="tagline" data-key="footerTagline">Sovereign Digital Architecture</p>
+                    <div class="social-links">
+                        <a href="#" class="social">LinkedIn</a>
+                        <a href="#" class="social">Twitter</a>
+                        <a href="#" class="social">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerServices">Leistungen</h4>
+                    <a href="services.html#architecture" data-key="service1Title">Enterprise Architektur</a>
+                    <a href="services.html#multilingual" data-key="service2Title">Multilinguale Systeme</a>
+                    <a href="services.html#performance" data-key="service3Title">Performance Optimierung</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerCompany">Unternehmen</h4>
+                    <a href="about.html" data-key="navAbout">Über uns</a>
+                    <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                    <a href="blog.html" data-key="navBlog">Blog</a>
+                    <a href="contact.html" data-key="navContact">Kontakt</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerContact">Kontakt</h4>
+                    <p>contact@globalex.digital</p>
+                    <p>+49 30 12345678</p>
+                    <p data-key="footerAddress">Berlin, Deutschland</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-key="copyright">© 2024 GLOBALEX Digital. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#" data-key="footerPrivacy">Datenschutz</a>
+                    <a href="#" data-key="footerTerms">AGB</a>
+                    <a href="#" data-key="footerImprint">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js" defer></script>
+</body>
+</html>

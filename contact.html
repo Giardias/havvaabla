@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktieren Sie GLOBALEX Digital - Unsere Büros in Berlin, London, Istanbul und 24/7 Support für globale Projekte.">
+    
+    <title>Kontakt | GLOBALEX Digital</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>">
+    
+    <!-- Translations FIRST -->
+    <script src="translations.js" defer></script>
+</head>
+<body>
+    <!-- Language Loader -->
+    <div class="language-loader">
+        <div class="loader-content">
+            <div class="loader-logo">◈ GLOBALEX</div>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="loader-text">Initialisiere...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">GLOBALEX</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" data-key="navHome">Start</a>
+                <a href="services.html" data-key="navServices">Leistungen</a>
+                <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                <a href="blog.html" data-key="navBlog">Blog</a>
+                <a href="about.html" data-key="navAbout">Über uns</a>
+                <a href="contact.html" data-key="navContact">Kontakt</a>
+                
+                <div class="language-selector">
+                    <button class="current-lang" id="currentLang">
+                        <span class="flag">🇩🇪</span>
+                        <span>DE</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <button data-lang="de">
+                            <span class="flag">🇩🇪</span>
+                            <span>Deutsch</span>
+                        </button>
+                        <button data-lang="en">
+                            <span class="flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button data-lang="tr">
+                            <span class="flag">🇹🇷</span>
+                            <span>Türkçe</span>
+                        </button>
+                        <button data-lang="ru">
+                            <span class="flag">🇷🇺</span>
+                            <span>Русский</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 data-key="contactHeroTitle">Kontaktieren Sie uns</h1>
+            <p data-key="contactHeroDesc">Lassen Sie uns über Ihr nächstes globales Projekt sprechen. Unser Team steht bereit, um Ihnen zu helfen.</p>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 data-key="contactOfficesTitle">Unsere Büros</h2>
+                    
+                    <!-- Berlin Office -->
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3 data-key="officeBerlin">Berlin HQ</h3>
+                            <p data-key="officeBerlinAddress">Friedrichstraße 123<br>
+                               10117 Berlin, Deutschland<br>
+                               <strong data-key="phoneLabel">Tel:</strong> +49 30 12345678<br>
+                               <strong data-key="emailLabel">Email:</strong> berlin@globalex.digital</p>
+                        </div>
+                    </div>
+                    
+                    <!-- London Office -->
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3 data-key="officeLondon">London Office</h3>
+                            <p data-key="officeLondonAddress">5th Floor, 123 Tech Street<br>
+                               London EC2A 4ST, United Kingdom<br>
+                               <strong data-key="phoneLabel">Tel:</strong> +44 20 7123 4567<br>
+                               <strong data-key="emailLabel">Email:</strong> london@globalex.digital</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Istanbul Office -->
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3 data-key="officeIstanbul">Istanbul Office</h3>
+                            <p data-key="officeIstanbulAddress">Levent Business Tower<br>
+                               34330 Istanbul, Türkei<br>
+                               <strong data-key="phoneLabel">Tel:</strong> +90 212 123 4567<br>
+                               <strong data-key="emailLabel">Email:</strong> istanbul@globalex.digital</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Support -->
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h3 data-key="supportTitle">24/7 Support</h3>
+                            <p><strong data-key="emailLabel">Email:</strong> support@globalex.digital<br>
+                               <strong data-key="emergencyLabel">Emergency:</strong> +49 30 98765432<br>
+                               <span data-key="responseTime">Antwortzeit: &lt; 15 Minuten</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 data-key="projectRequestTitle">Projektanfrage</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-key="formName">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" data-key="formCompany">Unternehmen</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-key="formEmail">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-key="formPhone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" data-key="formService">Interessierter Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="" data-key="formSelectOption">Bitte wählen</option>
+                                <option value="architecture" data-key="service1Title">Enterprise Architektur</option>
+                                <option value="multilingual" data-key="service2Title">Multilinguale Systeme</option>
+                                <option value="performance" data-key="service3Title">Performance Optimierung</option>
+                                <option value="consulting" data-key="serviceConsulting">Strategie Beratung</option>
+                                <option value="other" data-key="serviceOther">Andere</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" data-key="formBudget">Projektbudget (optional)</label>
+                            <select id="budget" name="budget">
+                                <option value="" data-key="formSelectOption">Bitte wählen</option>
+                                <option value="10-50k" data-key="budget1">€10.000 - €50.000</option>
+                                <option value="50-100k" data-key="budget2">€50.000 - €100.000</option>
+                                <option value="100-250k" data-key="budget3">€100.000 - €250.000</option>
+                                <option value="250k+" data-key="budget4">€250.000+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-key="formMessage">Projektbeschreibung *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Beschreiben Sie Ihr Projekt, Ziele und Anforderungen..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="privacy">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span data-key="formPrivacy">Ich stimme der <a href="#" data-key="footerPrivacy">Datenschutzerklärung</a> zu *</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large" data-key="formSubmit">Anfrage senden →</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2 data-key="globalPresenceTitle">Globale Präsenz</h2>
+                <p data-key="globalPresenceDesc">Mit Büros in strategischen Standorten weltweit und Remote-Teams in 15+ Ländern.</p>
+                
+                <div class="map-placeholder">
+                    <div style="text-align: center; padding: 4rem; background: linear-gradient(135deg, var(--color-ivory-dark) 0%, #e8e5e0 100%); border-radius: 12px;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🌍</div>
+                        <h3 style="margin-bottom: 1rem;" data-key="mapTitle">Global Operations Map</h3>
+                        <p data-key="mapLocations">Berlin • London • Istanbul • New York • Singapore • Dubai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">◈ GLOBALEX</div>
+                    <p class="tagline" data-key="footerTagline">Sovereign Digital Architecture</p>
+                    <div class="social-links">
+                        <a href="#" class="social" data-key="socialLinkedIn">LinkedIn</a>
+                        <a href="#" class="social" data-key="socialTwitter">Twitter</a>
+                        <a href="#" class="social" data-key="socialGitHub">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerServices">Leistungen</h4>
+                    <a href="services.html#architecture" data-key="service1Title">Enterprise Architektur</a>
+                    <a href="services.html#multilingual" data-key="service2Title">Multilinguale Systeme</a>
+                    <a href="services.html#performance" data-key="service3Title">Performance Optimierung</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerCompany">Unternehmen</h4>
+                    <a href="about.html" data-key="navAbout">Über uns</a>
+                    <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                    <a href="blog.html" data-key="navBlog">Blog</a>
+                    <a href="contact.html" data-key="navContact">Kontakt</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerContact">Kontakt</h4>
+                    <p>contact@globalex.digital</p>
+                    <p>+49 30 12345678</p>
+                    <p data-key="footerAddress">Berlin, Deutschland</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-key="copyright">© 2024 GLOBALEX Digital. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#" data-key="footerPrivacy">Datenschutz</a>
+                    <a href="#" data-key="footerTerms">AGB</a>
+                    <a href="#" data-key="footerImprint">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js" defer></script>
+    
+    <!-- Contact Form Script -->
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const formData = new FormData(this);
+            let isValid = true;
+            
+            // Check required fields
+            const required = ['name', 'email', 'service', 'message'];
+            required.forEach(field => {
+                if (!formData.get(field)) {
+                    isValid = false;
+                    document.getElementById(field).style.borderColor = '#ff6b6b';
+                } else {
+                    document.getElementById(field).style.borderColor = '';
+                }
+            });
+            
+            // Check privacy checkbox
+            if (!document.getElementById('privacy').checked) {
+                isValid = false;
+                document.getElementById('privacy').parentElement.style.color = '#ff6b6b';
+            } else {
+                document.getElementById('privacy').parentElement.style.color = '';
+            }
+            
+            if (isValid) {
+                // Success messages for different languages
+                const successMessages = {
+                    'de': 'Vielen Dank für Ihre Anfrage! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.',
+                    'en': 'Thank you for your request! We will contact you within 24 hours.',
+                    'tr': 'Teşekkür ederiz! Talebinizi aldık. En kısa sürede sizinle iletişime geçeceğiz.',
+                    'ru': 'Спасибо за ваш запрос! Мы свяжемся с вами в течение 24 часов.'
+                };
+                
+                const lang = document.documentElement.lang || 'de';
+                alert(successMessages[lang] || successMessages['de']);
+                this.reset();
+            } else {
+                // Error messages for different languages
+                const errorMessages = {
+                    'de': 'Bitte füllen Sie alle erforderlichen Felder aus und akzeptieren Sie die Datenschutzerklärung.',
+                    'en': 'Please fill in all required fields and accept the privacy policy.',
+                    'tr': 'Lütfen tüm gerekli alanları doldurun ve gizlilik politikasını kabul edin.',
+                    'ru': 'Пожалуйста, заполните все обязательные поля и примите политику конфиденциальности.'
+                };
+                
+                const lang = document.documentElement.lang || 'de';
+                alert(errorMessages[lang] || errorMessages['de']);
+            }
+        });
+        
+        // Reset border color on input
+        document.querySelectorAll('#contactForm input, #contactForm textarea, #contactForm select').forEach(input => {
+            input.addEventListener('input', function() {
+                this.style.borderColor = '';
+            });
+        });
+    </script>
+</body>
+</html>

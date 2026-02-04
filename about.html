@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Über GLOBALEX Digital - Unser Team, unsere Mission und Werte. 150+ Experten aus 15+ Ländern vereint durch eine Vision.">
+    
+    <title>Über uns | GLOBALEX Digital</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>">
+    
+    <!-- Translations FIRST -->
+    <script src="translations.js" defer></script>
+</head>
+<body>
+    <!-- Language Loader -->
+    <div class="language-loader">
+        <div class="loader-content">
+            <div class="loader-logo">◈ GLOBALEX</div>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="loader-text">Initialisiere...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">GLOBALEX</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" data-key="navHome">Start</a>
+                <a href="services.html" data-key="navServices">Leistungen</a>
+                <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                <a href="blog.html" data-key="navBlog">Blog</a>
+                <a href="about.html" data-key="navAbout">Über uns</a>
+                <a href="contact.html" data-key="navContact">Kontakt</a>
+                
+                <div class="language-selector">
+                    <button class="current-lang" id="currentLang">
+                        <span class="flag">🇩🇪</span>
+                        <span>DE</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <button data-lang="de">
+                            <span class="flag">🇩🇪</span>
+                            <span>Deutsch</span>
+                        </button>
+                        <button data-lang="en">
+                            <span class="flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button data-lang="tr">
+                            <span class="flag">🇹🇷</span>
+                            <span>Türkçe</span>
+                        </button>
+                        <button data-lang="ru">
+                            <span class="flag">🇷🇺</span>
+                            <span>Русский</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1 data-key="aboutHeroTitle">Unser Team, Unsere Mission</h1>
+            <p data-key="aboutHeroDesc">150+ Experten aus 15+ Ländern, vereint durch eine Vision: Digitale Souveränität für globale Unternehmen schaffen.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <main class="team-section">
+        <div class="container">
+            <!-- Mission -->
+            <div class="mission-section">
+                <h2 data-key="missionTitle">Unsere Mission</h2>
+                <p data-key="missionDesc">Seit unserer Gründung im Jahr 2010 haben wir uns darauf spezialisiert, globale Unternehmen mit digitaler Infrastruktur auszustatten, die nicht nur funktioniert, sondern auch skaliert, sichert und souverän agiert. Wir glauben an Technologie, die Grenzen überwindet, aber kulturelle Identitäten respektiert.</p>
+            </div>
+
+            <!-- Leadership Team -->
+            <div class="leadership-section">
+                <h2 data-key="leadershipTitle">Leadership Team</h2>
+                <p data-key="leadershipDesc">Erfahren Sie unser Team von Visionären und Experten kennen, die GLOBALEX zu dem machen, was es heute ist.</p>
+                
+                <div class="team-grid">
+                    <!-- Team Member 1 -->
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div style="text-align: center; line-height: 120px;">DR</div>
+                        </div>
+                        <h3 data-key="member1Name">Dr. Robert Schmidt</h3>
+                        <p class="member-title" data-key="member1Title">CEO & Founder</p>
+                        <p class="member-desc" data-key="member1Desc">20+ Jahre Erfahrung in Enterprise Architecture. Ehemaliger CTO bei Fortune 500 Unternehmen.</p>
+                        <div class="member-social">
+                            <a href="#" data-key="socialLinkedIn">LinkedIn</a>
+                            <a href="#" data-key="socialTwitter">Twitter</a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div style="text-align: center; line-height: 120px;">AJ</div>
+                        </div>
+                        <h3 data-key="member2Name">Anna Jäger</h3>
+                        <p class="member-title" data-key="member2Title">CTO</p>
+                        <p class="member-desc" data-key="member2Desc">Expertin für Cloud-Infrastrukturen und Performance Engineering. Vorher bei AWS und Google Cloud.</p>
+                        <div class="member-social">
+                            <a href="#" data-key="socialLinkedIn">LinkedIn</a>
+                            <a href="#" data-key="socialGitHub">GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div style="text-align: center; line-height: 120px;">MS</div>
+                        </div>
+                        <h3 data-key="member3Name">Michael Schneider</h3>
+                        <p class="member-title" data-key="member3Title">Head of Linguistics</p>
+                        <p class="member-desc" data-key="member3Desc">Sprachwissenschaftler mit Fokus auf KI-gestützte Lokalisierung. Spricht 8 Sprachen fließend.</p>
+                        <div class="member-social">
+                            <a href="#" data-key="socialLinkedIn">LinkedIn</a>
+                            <a href="#" data-key="socialResearch">Research</a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div style="text-align: center; line-height: 120px;">SB</div>
+                        </div>
+                        <h3 data-key="member4Name">Sarah Bauer</h3>
+                        <p class="member-title" data-key="member4Title">Head of Security</p>
+                        <p class="member-desc" data-key="member4Desc">Cybersecurity Expertin mit Schwerpunkt auf Compliance und Data Sovereignty. ISO 27001 Auditor.</p>
+                        <div class="member-social">
+                            <a href="#" data-key="socialLinkedIn">LinkedIn</a>
+                            <a href="#" data-key="socialBlog">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="company-stats">
+                <h2 data-key="statsTitle">GLOBALEX in Zahlen</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label" data-key="statExperts">Experten</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">43</div>
+                        <div class="stat-label" data-key="statCountries">Länder</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label" data-key="statLanguages">Sprachen</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">14</div>
+                        <div class="stat-label" data-key="statYears">Jahre Erfahrung</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="values-section">
+                <h2 data-key="valuesTitle">Unsere Werte</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">⚡</div>
+                        <h3 data-key="value1Title">Excellence</h3>
+                        <p data-key="value1Desc">Wir akzeptieren nur das Beste - in Technologie, Design und Service.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h3 data-key="value2Title">Partnership</h3>
+                        <p data-key="value2Desc">Wir sind nicht nur Dienstleister, sondern strategische Partner unserer Kunden.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🌍</div>
+                        <h3 data-key="value3Title">Global Mindset</h3>
+                        <p data-key="value3Desc">Wir denken global, handeln lokal und respektieren kulturelle Unterschiede.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🔒</div>
+                        <h3 data-key="value4Title">Security & Privacy</h3>
+                        <p data-key="value4Desc">Datensicherheit und Privatsphäre sind keine Features, sondern Grundvoraussetzungen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-key="aboutCTATitle">Werden Sie Teil unserer Erfolgsgeschichte</h2>
+                <p data-key="aboutCTADesc">Ob als Kunde oder Teammitglied - gemeinsam können wir digitale Souveränität neu definieren.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-key="ctaButton">Kontakt aufnehmen</a>
+                    <a href="careers.html" class="btn btn-secondary" data-key="careersBtn">Karriere</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">◈ GLOBALEX</div>
+                    <p class="tagline" data-key="footerTagline">Sovereign Digital Architecture</p>
+                    <div class="social-links">
+                        <a href="#" class="social" data-key="socialLinkedIn">LinkedIn</a>
+                        <a href="#" class="social" data-key="socialTwitter">Twitter</a>
+                        <a href="#" class="social" data-key="socialGitHub">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerServices">Leistungen</h4>
+                    <a href="services.html#architecture" data-key="service1Title">Enterprise Architektur</a>
+                    <a href="services.html#multilingual" data-key="service2Title">Multilinguale Systeme</a>
+                    <a href="services.html#performance" data-key="service3Title">Performance Optimierung</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerCompany">Unternehmen</h4>
+                    <a href="about.html" data-key="navAbout">Über uns</a>
+                    <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                    <a href="blog.html" data-key="navBlog">Blog</a>
+                    <a href="contact.html" data-key="navContact">Kontakt</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerContact">Kontakt</h4>
+                    <p>contact@globalex.digital</p>
+                    <p>+49 30 12345678</p>
+                    <p data-key="footerAddress">Berlin, Deutschland</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-key="copyright">© 2024 GLOBALEX Digital. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#" data-key="footerPrivacy">Datenschutz</a>
+                    <a href="#" data-key="footerTerms">AGB</a>
+                    <a href="#" data-key="footerImprint">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js" defer></script>
+</body>
+</html>

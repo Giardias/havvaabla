@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sovereign Digital Architecture for Global Enterprises">
+    
+    <title>GLOBALEX | Sovereign Digital Architecture</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0A0A0A">
+    
+    <!-- Translations FIRST -->
+    <script src="translations.js" defer></script>
+</head>
+<body>
+    <!-- Language Loader -->
+    <div class="language-loader">
+        <div class="loader-content">
+            <div class="loader-logo">◈ GLOBALEX</div>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="loader-text">Initialisiere...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">GLOBALEX</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" data-key="navHome">Start</a>
+                <a href="services.html" data-key="navServices">Leistungen</a>
+                <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                <a href="blog.html" data-key="navBlog">Blog</a>
+                <a href="about.html" data-key="navAbout">Über uns</a>
+                <a href="contact.html" data-key="navContact">Kontakt</a>
+                
+                <div class="language-selector">
+                    <button class="current-lang" id="currentLang">
+                        <span class="flag">🇩🇪</span>
+                        <span>DE</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <button data-lang="de">
+                            <span class="flag">🇩🇪</span>
+                            <span>Deutsch</span>
+                        </button>
+                        <button data-lang="en">
+                            <span class="flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button data-lang="tr">
+                            <span class="flag">🇹🇷</span>
+                            <span>Türkçe</span>
+                        </button>
+                        <button data-lang="ru">
+                            <span class="flag">🇷🇺</span>
+                            <span>Русский</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge" data-key="heroBadge">PREMIUM ARCHITEKTUR</div>
+                <h1 data-key="heroTitle">Wir bauen <span class="highlight">digitale Imperien</span> für globale Führung</h1>
+                <p class="subtitle" data-key="heroSubtitle">43 Länder. 12 Sprachen. 99,999% Verfügbarkeit. Ihre digitale Souveränität beginnt hier.</p>
+                <div class="hero-buttons">
+                    <a href="portfolio.html" class="btn btn-primary" data-key="heroBtn1">Portfolio ansehen</a>
+                    <a href="contact.html" class="btn btn-secondary" data-key="heroBtn2">Kontakt aufnehmen</a>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="number">99.999%</div>
+                    <div class="label" data-key="statUptime">Verfügbarkeit</div>
+                </div>
+                <div class="stat">
+                    <div class="number">150+</div>
+                    <div class="label" data-key="statProjects">Projekte</div>
+                </div>
+                <div class="stat">
+                    <div class="number">43</div>
+                    <div class="label" data-key="statCountries">Länder</div>
+                </div>
+                <div class="stat">
+                    <div class="number">12</div>
+                    <div class="label" data-key="statLanguages">Sprachen</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="servicesTitle">Unsere Premium-Leistungen</h2>
+                <p data-key="servicesSubtitle">Von der Strategie bis zur Implementierung - alles aus einer Hand</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">◈</div>
+                    <h3 data-key="service1Title">Enterprise Architektur</h3>
+                    <p data-key="service1Desc">Skalierbare, sichere Infrastrukturen für globale Unternehmen.</p>
+                    <a href="services.html#architecture" class="link" data-key="learnMore">Mehr erfahren →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon">◊</div>
+                    <h3 data-key="service2Title">Multilinguale Systeme</h3>
+                    <p data-key="service2Desc">Kulturell angepasste Lösungen für internationale Märkte.</p>
+                    <a href="services.html#multilingual" class="link" data-key="learnMore">Mehr erfahren →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon">◇</div>
+                    <h3 data-key="service3Title">Performance Optimierung</h3>
+                    <p data-key="service3Desc">Sub-100ms Ladezeiten weltweit durch Edge Computing.</p>
+                    <a href="services.html#performance" class="link" data-key="learnMore">Mehr erfahren →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="portfolio-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="portfolioTitle">Aktuelle Projekte</h2>
+                <p data-key="portfolioSubtitle">Internationale Erfolgsgeschichten aus unserer Werkstatt</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="image-placeholder">🌍</div>
+                    <h3 data-key="project1Title">Global Banking Platform</h3>
+                    <p data-key="project1Desc">Mehrsprachige Banking-Lösung für 20+ Länder</p>
+                    <a href="portfolio.html#banking" class="btn btn-small" data-key="viewProject">Projekt ansehen</a>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="image-placeholder">🏢</div>
+                    <h3 data-key="project2Title">Enterprise CRM Suite</h3>
+                    <p data-key="project2Desc">Custom CRM mit KI-Integration für 5000+ Nutzer</p>
+                    <a href="portfolio.html#crm" class="btn btn-small" data-key="viewProject">Projekt ansehen</a>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="image-placeholder">🛒</div>
+                    <h3 data-key="project3Title">E-Commerce Global</h3>
+                    <p data-key="project3Desc">Multilingualer Online-Shop mit 12 Währungen</p>
+                    <a href="portfolio.html#ecommerce" class="btn btn-small" data-key="viewProject">Projekt ansehen</a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="portfolio.html" class="btn btn-outline" data-key="viewAllProjects">Alle Projekte ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview -->
+    <section class="blog-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="blogTitle">Aus unserem Blog</h2>
+                <p data-key="blogSubtitle">Erkenntnisse und Trends aus der Welt der digitalen Souveränität</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <div class="date" data-key="blogDate1">15. Jan 2024</div>
+                    <h3 data-key="blogTitle1">Die Zukunft der mehrsprachigen KI</h3>
+                    <p data-key="blogDesc1">Wie künstliche Intelligenz kulturelle Nuancen meistert</p>
+                    <a href="blog.html#future-ai" class="read-more" data-key="readMore">Weiterlesen →</a>
+                </article>
+                
+                <article class="blog-post">
+                    <div class="date" data-key="blogDate2">8. Jan 2024</div>
+                    <h3 data-key="blogTitle2">Edge Computing für globale Präsenz</h3>
+                    <p data-key="blogDesc2">Wie wir Ladezeiten unter 100ms weltweit garantieren</p>
+                    <a href="blog.html#edge-computing" class="read-more" data-key="readMore">Weiterlesen →</a>
+                </article>
+                
+                <article class="blog-post">
+                    <div class="date" data-key="blogDate3">2. Jan 2024</div>
+                    <h3 data-key="blogTitle3">Digital Sovereignty in der EU</h3>
+                    <p data-key="blogDesc3">Neue Regularien ve ihre Auswirkungen auf Unternehmen</p>
+                    <a href="blog.html#digital-sovereignty" class="read-more" data-key="readMore">Weiterlesen →</a>
+                </article>
+            </div>
+            
+            <div class="text-center">
+                <a href="blog.html" class="btn btn-outline" data-key="viewAllArticles">Alle Artikel lesen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-key="ctaTitle">Bereit für digitale Souveränität?</h2>
+                <p data-key="ctaSubtitle">Lassen Sie uns über Ihr nächstes globales Projekt sprechen</p>
+                <a href="contact.html" class="btn btn-primary btn-large" data-key="ctaButton">Projekt besprechen →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">◈ GLOBALEX</div>
+                    <p class="tagline" data-key="footerTagline">Sovereign Digital Architecture</p>
+                    <div class="social-links">
+                        <a href="#" class="social">LinkedIn</a>
+                        <a href="#" class="social">Twitter</a>
+                        <a href="#" class="social">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerServices">Leistungen</h4>
+                    <a href="services.html#architecture" data-key="service1Title">Enterprise Architektur</a>
+                    <a href="services.html#multilingual" data-key="service2Title">Multilinguale Systeme</a>
+                    <a href="services.html#performance" data-key="service3Title">Performance Optimierung</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerCompany">Unternehmen</h4>
+                    <a href="about.html" data-key="navAbout">Über uns</a>
+                    <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                    <a href="blog.html" data-key="navBlog">Blog</a>
+                    <a href="contact.html" data-key="navContact">Kontakt</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerContact">Kontakt</h4>
+                    <p>contact@globalex.digital</p>
+                    <p>+49 30 12345678</p>
+                    <p data-key="footerAddress">Berlin, Deutschland</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-key="copyright">© 2024 GLOBALEX Digital. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#" data-key="footerPrivacy">Datenschutz</a>
+                    <a href="#" data-key="footerTerms">AGB</a>
+                    <a href="#" data-key="footerImprint">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js" defer></script>
+</body>
+</html>

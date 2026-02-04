@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog & Insights - Expertenwissen über digitale Souveränität, globale Technologie und Enterprise-Architektur von GLOBALEX Digital.">
+    
+    <title>Blog | GLOBALEX Digital</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>">
+    
+    <!-- Translations FIRST -->
+    <script src="translations.js" defer></script>
+</head>
+<body>
+    <!-- Language Loader -->
+    <div class="language-loader">
+        <div class="loader-content">
+            <div class="loader-logo">◈ GLOBALEX</div>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="loader-text">Initialisiere...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">GLOBALEX</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" data-key="navHome">Start</a>
+                <a href="services.html" data-key="navServices">Leistungen</a>
+                <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                <a href="blog.html" data-key="navBlog">Blog</a>
+                <a href="about.html" data-key="navAbout">Über uns</a>
+                <a href="contact.html" data-key="navContact">Kontakt</a>
+                
+                <div class="language-selector">
+                    <button class="current-lang" id="currentLang">
+                        <span class="flag">🇩🇪</span>
+                        <span>DE</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <button data-lang="de">
+                            <span class="flag">🇩🇪</span>
+                            <span>Deutsch</span>
+                        </button>
+                        <button data-lang="en">
+                            <span class="flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button data-lang="tr">
+                            <span class="flag">🇹🇷</span>
+                            <span>Türkçe</span>
+                        </button>
+                        <button data-lang="ru">
+                            <span class="flag">🇷🇺</span>
+                            <span>Русский</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 data-key="blogPageTitle">Blog & Insights</h1>
+            <p data-key="blogPageSubtitle">Expertenwissen über digitale Souveränität, globale Technologie und Enterprise-Architektur von unserem Expertenteam.</p>
+        </div>
+    </header>
+
+    <!-- Blog Main Content -->
+    <main class="blog-main">
+        <div class="container">
+            <!-- Categories -->
+            <div class="blog-categories">
+                <button class="category active" data-key="categoryAll">Alle Artikel</button>
+                <button class="category" data-key="categoryTech">Technologie</button>
+                <button class="category" data-key="categoryStrategy">Strategie</button>
+                <button class="category" data-key="categoryCaseStudies">Case Studies</button>
+                <button class="category" data-key="categoryIndustry">Branchennews</button>
+                <button class="category" data-key="categoryAI">KI & Machine Learning</button>
+                <button class="category" data-key="categorySecurity">Sicherheit & Compliance</button>
+            </div>
+
+            <!-- Featured Article -->
+            <div class="featured-article">
+                <article class="blog-article">
+                    <div class="article-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span data-key="featuredHighlight">🤖 HIGHLIGHT</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category-tag" data-key="categoryTech">Technologie</span>
+                            <span class="date">15. Jan 2024</span>
+                            <span class="read-time" data-key="readTime">8 Min. Lesezeit</span>
+                            <span class="featured-badge" data-key="featuredBadge">Featured</span>
+                        </div>
+                        <h2><a href="blog-post.html" data-key="featuredArticleTitle">Die Zukunft der mehrsprachigen KI im globalen Geschäft</a></h2>
+                        <p data-key="featuredArticleDesc">Wie künstliche Intelligenz Sprachbarrieren überwindet und wirklich globale Geschäftslösungen schafft. Wir erkunden die neuesten Fortschritte in NLP, kulturellen Anpassungsalgorithmen und Echtzeit-Übersetzungssystemen, die den internationalen Handel revolutionieren.</p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">DR</div>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name" data-key="author1Name">Dr. Robert Schmidt</div>
+                                <div class="author-title" data-key="author1Title">AI Research Director</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="blog-articles">
+                <!-- Article 1 -->
+                <article class="blog-article">
+                    <div class="article-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span data-key="article1Tag">⚡ Edge Computing</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category-tag" data-key="categoryTech">Technologie</span>
+                            <span class="date">8. Jan 2024</span>
+                            <span class="read-time" data-key="readTime">6 Min. Lesezeit</span>
+                        </div>
+                        <h2><a href="blog-post.html" data-key="article1Title">Edge Computing: Das Geheimnis globaler Performance</a></h2>
+                        <p data-key="article1Desc">Entdecken Sie, wie Edge-Computing-Infrastruktur Antwortzeiten unter 100ms in 43 Ländern ermöglicht. Echte Fallstudie von unserem Bankkunden mit 99,99% Verfügbarkeit und wie wir ihr globales Netzwerk optimiert haben.</p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">MS</div>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name" data-key="author2Name">Michael Schneider</div>
+                                <div class="author-title" data-key="author2Title">CTO & Infrastructure Lead</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-article">
+                    <div class="article-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span data-key="article2Tag">🌍 Digitale Souveränität</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category-tag" data-key="categoryStrategy">Strategie</span>
+                            <span class="date">2. Jan 2024</span>
+                            <span class="read-time" data-key="readTime">7 Min. Lesezeit</span>
+                        </div>
+                        <h2><a href="blog-post.html" data-key="article2Title">Digitale Souveränitätsregulierungen in der Europäischen Union</a></h2>
+                        <p data-key="article2Desc">Neue GDPR-Erweiterungen und digitale Souveränitätsgesetze verändern, wie Unternehmen mit Daten umgehen. Was Sie für die Compliance 2024 in EU-Märkten und darüber hinaus wissen müssen.</p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">AJ</div>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name" data-key="author3Name">Anna Jäger</div>
+                                <div class="author-title" data-key="author3Title">Legal Compliance Expert</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-article">
+                    <div class="article-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <span data-key="article3Tag">🏦 Banking Tech</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category-tag" data-key="categoryCaseStudies">Case Studies</span>
+                            <span class="date">28. Dez 2023</span>
+                            <span class="read-time" data-key="readTime">5 Min. Lesezeit</span>
+                        </div>
+                        <h2><a href="blog-post.html" data-key="article3Title">Aufbau einer Multi-Währungs-Banking-Plattform für 20+ Länder</a></h2>
+                        <p data-key="article3Desc">Fallstudie: Wie wir ein Echtzeit-Bankensystem gebaut haben, das 12 Währungen mit Zero-Downtime-Deployments und regulatorischer Compliance in verschiedenen Finanzjurisdiktionen handhabt.</p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">TK</div>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name" data-key="author4Name">Thomas Klein</div>
+                                <div class="author-title" data-key="author4Title">Lead Architect, Finance Division</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-article">
+                    <div class="article-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span data-key="article4Tag">🔒 Sicherheit</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category-tag" data-key="categorySecurity">Sicherheit & Compliance</span>
+                            <span class="date">20. Dez 2023</span>
+                            <span class="read-time" data-key="readTime">6 Min. Lesezeit</span>
+                        </div>
+                        <h2><a href="blog-post.html" data-key="article4Title">Zero-Trust-Architektur für globale Unternehmen</a></h2>
+                        <p data-key="article4Desc">Implementierung von Zero-Trust-Sicherheitsmodellen über verteilte Teams in 15+ Ländern. Best Practices, Tools und unser Ansatz zur Sicherung sensibler Daten in Multi-Cloud-Umgebungen.</p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">SB</div>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name" data-key="author5Name">Sarah Bauer</div>
+                                <div class="author-title" data-key="author5Title">Head of Security</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-article">
+                    <div class="article-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span data-key="article5Tag">📈 Wachstum</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category-tag" data-key="categoryStrategy">Strategie</span>
+                            <span class="date">15. Dez 2023</span>
+                            <span class="read-time" data-key="readTime">4 Min. Lesezeit</span>
+                        </div>
+                        <h2><a href="blog-post.html" data-key="article5Title">Skalierung von lokal zu global: Ein 12-Monats-Fahrplan</a></h2>
+                        <p data-key="article5Desc">Praktischer Leitfaden für Unternehmen, die international expandieren möchten. Technologie-Stack-Entscheidungen, Teamstruktur, Compliance-Anforderungen und kulturelle Überlegungen.</p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">ML</div>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name" data-key="author6Name">Maria Lopez</div>
+                                <div class="author-title" data-key="author6Title">Global Expansion Strategist</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-article">
+                    <div class="article-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);">
+                            <span data-key="article6Tag">💼 Enterprise</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category-tag" data-key="categoryIndustry">Branchennews</span>
+                            <span class="date">10. Dez 2023</span>
+                            <span class="read-time" data-key="readTime">5 Min. Lesezeit</span>
+                        </div>
+                        <h2><a href="blog-post.html" data-key="article6Title">Enterprise-Technologietrends 2024, die Sie nicht ignorieren können</a></h2>
+                        <p data-key="article6Desc">Unsere Vorhersagen für das kommende Jahr: KI-Integration, dezentrale Architekturen, nachhaltige Technologie und der Aufstieg souveräner Cloud-Lösungen in regulierten Branchen.</p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">CR</div>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name" data-key="author7Name">Chris Richter</div>
+                                <div class="author-title" data-key="author7Title">Technology Analyst</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-btn" data-key="nextPage">Nächste →</a>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h2 data-key="newsletterTitle">Bleiben Sie informiert</h2>
+                    <p data-key="newsletterDesc">Abonnieren Sie unseren Newsletter für die neuesten Erkenntnisse über digitale Souveränität und globale Technologie.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Ihre E-Mail-Adresse" required data-key="emailPlaceholder">
+                            <button type="submit" class="btn btn-primary" data-key="subscribeBtn">Abonnieren</button>
+                        </div>
+                        <div class="form-note">
+                            <small data-key="privacyNote">Mit dem Abonnieren stimmen Sie unserer Datenschutzerklärung zu. Kein Spam, niemals.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">◈ GLOBALEX</div>
+                    <p class="tagline" data-key="footerTagline">Sovereign Digital Architecture</p>
+                    <div class="social-links">
+                        <a href="#" class="social" data-key="socialLinkedIn">LinkedIn</a>
+                        <a href="#" class="social" data-key="socialTwitter">Twitter</a>
+                        <a href="#" class="social" data-key="socialGitHub">GitHub</a>
+                        <a href="#" class="social" data-key="socialMedium">Medium</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerCategories">Kategorien</h4>
+                    <a href="blog.html?category=technologie" data-key="categoryTech">Technologie</a>
+                    <a href="blog.html?category=strategie" data-key="categoryStrategy">Strategie</a>
+                    <a href="blog.html?category=case-studies" data-key="categoryCaseStudies">Case Studies</a>
+                    <a href="blog.html?category=branchennews" data-key="categoryIndustry">Branchennews</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerCompany">Unternehmen</h4>
+                    <a href="about.html" data-key="navAbout">Über uns</a>
+                    <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                    <a href="blog.html" data-key="navBlog">Blog</a>
+                    <a href="contact.html" data-key="navContact">Kontakt</a>
+                    <a href="careers.html" data-key="navCareers">Karriere</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerContact">Kontakt</h4>
+                    <p>contact@globalex.digital</p>
+                    <p>+49 30 12345678</p>
+                    <p data-key="footerAddress">Berlin, Deutschland</p>
+                    <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.5;" data-key="footerSupport">24/7 Globaler Support</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-key="copyright">© 2024 GLOBALEX Digital. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="privacy.html" data-key="footerPrivacy">Datenschutz</a>
+                    <a href="terms.html" data-key="footerTerms">AGB</a>
+                    <a href="cookies.html" data-key="footerCookies">Cookie-Richtlinie</a>
+                    <a href="imprint.html" data-key="footerImprint">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js" defer></script>
+    
+    <!-- Blog Script -->
+    <script>
+        // Blog categories functionality
+        document.querySelectorAll('.category').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.category').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // In einer echten App würden hier Artikel gefiltert werden
+                console.log('Filter nach:', this.textContent);
+            });
+        });
+        
+        // Newsletter form
+        document.querySelector('.newsletter-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            if (email) {
+                // Erfolgsmeldung anzeigen
+                const successMessages = {
+                    'de': 'Vielen Dank für Ihr Abonnement! Sie erhalten unseren nächsten Newsletter.',
+                    'en': 'Thank you for subscribing! You will receive our next newsletter.',
+                    'tr': 'Aboneliğiniz için teşekkür ederiz! Bir sonraki bültenimizi alacaksınız.',
+                    'ru': 'Спасибо за подписку! Вы получите нашу следующую рассылку.'
+                };
+                
+                const lang = document.documentElement.lang || 'de';
+                alert(successMessages[lang] || successMessages['de']);
+                this.reset();
+            }
+        });
+        
+        // Featured article styling
+        const style = document.createElement('style');
+        style.textContent = `
+            .featured-article {
+                margin-bottom: var(--space-xl);
+            }
+            
+            .featured-article .blog-article {
+                grid-template-columns: 400px 1fr;
+            }
+            
+            .featured-article .article-image {
+                height: 300px;
+            }
+            
+            .featured-article h2 {
+                font-size: 2rem;
+            }
+            
+            .featured-badge {
+                background: var(--color-gold);
+                color: var(--color-charcoal);
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-size: 0.75rem;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+            }
+            
+            .newsletter-section {
+                margin-top: var(--space-xxl);
+                padding: var(--space-xl);
+                background: var(--color-ivory);
+                border-radius: var(--radius-lg);
+                border: 1px solid rgba(196, 169, 98, 0.1);
+                text-align: center;
+            }
+            
+            .newsletter-content h2 {
+                font-family: var(--font-secondary);
+                font-size: 2rem;
+                margin-bottom: var(--space-sm);
+                color: var(--color-charcoal);
+            }
+            
+            .newsletter-content p {
+                color: var(--color-navy);
+                max-width: 500px;
+                margin: 0 auto var(--space-lg);
+            }
+            
+            .newsletter-form .form-group {
+                display: flex;
+                gap: var(--space-sm);
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .newsletter-form input {
+                flex: 1;
+                padding: var(--space-sm);
+                border: 1px solid rgba(196, 169, 98, 0.3);
+                border-radius: var(--radius-sm);
+                background: transparent;
+                color: var(--color-charcoal);
+                font-family: var(--font-primary);
+            }
+            
+            .newsletter-form input:focus {
+                outline: none;
+                border-color: var(--color-gold);
+            }
+            
+            .form-note {
+                margin-top: var(--space-sm);
+                color: var(--color-navy);
+                opacity: 0.7;
+                font-size: 0.75rem;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
