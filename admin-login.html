@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Admin Giriş | GLOBALEX</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="admin.css">
+    
+    <style>
+        /* Mobil için ek düzeltmeler */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background: var(--light);
+            font-family: 'Inter', sans-serif;
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-section">
+        <div class="login-header">
+            <div class="login-logo">◈</div>
+            <h1>GLOBALEX</h1>
+            <p>Admin Paneli</p>
+        </div>
+
+        <div class="login-form">
+            <div class="form-group">
+                <label>E-Mail Adresi</label>
+                <input type="email" id="login-email" value="admin@globalex.digital" placeholder="E-Mail adresinizi girin">
+            </div>
+
+            <div class="form-group">
+                <label>Şifre</label>
+                <input type="password" id="login-password" value="123456" placeholder="Şifrenizi girin">
+            </div>
+
+            <button class="login-btn" id="login-btn">
+                <span>🔓</span> Giriş Yap
+            </button>
+
+            <div class="login-info">
+                <strong>📌 TEST BİLGİLERİ:</strong>
+                E-posta: admin@globalex.digital<br>
+                Şifre: 123456
+            </div>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "@firebase/app": "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js",
+                "@firebase/auth": "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDhr_iR7w1qOs-SwDZ0FhGhF7RIAfiN1kI",
+            authDomain: "havvaabla.firebaseapp.com",
+            projectId: "havvaabla",
+            storageBucket: "havvaabla.firebasestorage.app",
+            messagingSenderId: "783441783764",
+            appId: "1:783441783764:web:faec837359e01baaef8441"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const loginBtn = document.getElementById('login-btn');
+        const emailInput = document.getElementById('login-email');
+        const passwordInput = document.getElementById('login-password');
+
+        // Enter tuşu ile gönderme
+        [emailInput, passwordInput].forEach(input => {
+            input.addEventListener('keypress', function(e) {
+                if(e.key === 'Enter') {
+                    e.preventDefault();
+                    loginBtn.click();
+                }
+            });
+        });
+
+        loginBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const email = emailInput.value.trim();
+            const password = passwordInput.value.trim();
+            
+            if(!email || !password) {
+                alert('Lütfen email ve şifre girin!');
+                return;
+            }
+            
+            this.disabled = true;
+            this.innerHTML = '<span>⏳</span> Giriş yapılıyor...';
+            
+            signInWithEmailAndPassword(auth, email, password)
+                .then(() => {
+                    window.location.href = 'admin-panel.html';
+                })
+                .catch((error) => {
+                    alert('Hata: ' + error.message);
+                    this.disabled = false;
+                    this.innerHTML = '<span>🔓</span> Giriş Yap';
+                });
+        });
+
+        // Sayfa yüklendiğinde email inputuna focus
+        window.addEventListener('load', function() {
+            emailInput.focus();
+        });
+    </script>
+</body>
+</html>

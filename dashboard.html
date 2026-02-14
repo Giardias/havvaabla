@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | GLOBALEX Admin</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-wrapper">
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">◈ GLOBALEX</div>
+                <div class="logo-small">◈</div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="active">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a href="admin-panel.html">
+                    <span class="nav-icon">📝</span>
+                    <span class="nav-text">Blog Yönetimi</span>
+                </a>
+                <a href="#">
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-text">Kullanıcılar</span>
+                </a>
+                <a href="#">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-text">Ayarlar</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <div class="user-avatar">A</div>
+                    <div class="user-details">
+                        <div class="user-name" id="userName">Admin</div>
+                        <div class="user-role">Administrator</div>
+                    </div>
+                </div>
+                <button class="logout-btn" id="logoutBtn">
+                    <span class="nav-icon">🚪</span>
+                    <span class="nav-text">Çıkış</span>
+                </button>
+            </div>
+        </aside>
+        
+        <main class="admin-main">
+            <div class="admin-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <a href="admin-panel.html" class="btn btn-primary">
+                        <span>➕</span> Yeni Blog
+                    </a>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📝</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="totalPosts">12</div>
+                        <div class="stat-label">Toplam Blog</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="totalAuthors">5</div>
+                        <div class="stat-label">Yazarlar</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🏷️</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="totalCategories">4</div>
+                        <div class="stat-label">Kategoriler</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="postsThisMonth">3</div>
+                        <div class="stat-label">Bu Ay</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-card">
+                <div class="card-header">
+                    <h2>Son Bloglar</h2>
+                    <a href="admin-panel.html" class="link">Tümü →</a>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Başlık</th>
+                                <th>Kategori</th>
+                                <th>Yazar</th>
+                                <th>Tarih</th>
+                                <th>Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Edge Computing Geleceği</td>
+                                <td><span class="category-badge">Technologie</span></td>
+                                <td>Ahmet Yılmaz</td>
+                                <td>14.02.2024</td>
+                                <td><span class="status-badge status-published">Yayında</span></td>
+                            </tr>
+                            <tr>
+                                <td>Multilingual AI Sistemler</td>
+                                <td><span class="category-badge">AI</span></td>
+                                <td>Zeynep Demir</td>
+                                <td>12.02.2024</td>
+                                <td><span class="status-badge status-published">Yayında</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('logoutBtn')?.addEventListener('click', function() {
+            window.location.href = 'admin-login.html';
+        });
+    </script>
+</body>
+</html>

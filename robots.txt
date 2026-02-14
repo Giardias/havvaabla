@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: /sitemap.xml
+
+# Language Targeting
+Hreflang: de-DE
+Hreflang: en-US
+Hreflang: tr-TR
+Hreflang: ru-RU

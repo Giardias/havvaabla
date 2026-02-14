@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - 150+ Projekte in 43 Ländern. Erfahren Sie, wie wir globale Unternehmen transformieren.">
+    
+    <title>Portfolio | GLOBALEX Digital</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>">
+    
+    <!-- Translations -->
+    <script src="translations.js"></script>
+</head>
+<body>
+    <!-- Language Loader -->
+    <div class="language-loader" id="languageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">◈ GLOBALEX</div>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="loader-text">Initialisiere...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">GLOBALEX</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" data-key="navHome">Start</a>
+                <a href="services.html" data-key="navServices">Leistungen</a>
+                <a href="portfolio.html" class="active" data-key="navPortfolio">Portfolio</a>
+                <a href="blog.html" data-key="navBlog">Blog</a>
+                <a href="about.html" data-key="navAbout">Über uns</a>
+                <a href="contact.html" data-key="navContact">Kontakt</a>
+                
+                <div class="language-selector">
+                    <button class="current-lang" id="currentLang">
+                        <span class="flag">🇩🇪</span>
+                        <span>DE</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <button data-lang="de">
+                            <span class="flag">🇩🇪</span>
+                            <span>Deutsch</span>
+                        </button>
+                        <button data-lang="en">
+                            <span class="flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button data-lang="tr">
+                            <span class="flag">🇹🇷</span>
+                            <span>Türkçe</span>
+                        </button>
+                        <button data-lang="ru">
+                            <span class="flag">🇷🇺</span>
+                            <span>Русский</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 data-key="portfolioHeroTitle">Unsere Erfolgsgeschichten</h1>
+            <p data-key="portfolioHeroDesc">150+ Projekte in 43 Ländern. Erfahren Sie, wie wir globale Unternehmen transformieren.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <div class="portfolio-filters">
+        <div class="container">
+            <div class="filters-container">
+                <button class="filter-btn active" data-filter="all" data-key="filterAll">Alle Projekte</button>
+                <button class="filter-btn" data-filter="finance" data-key="filterFinance">Finanzen</button>
+                <button class="filter-btn" data-filter="ecommerce" data-key="filterEcommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="enterprise" data-key="filterEnterprise">Enterprise</button>
+                <button class="filter-btn" data-filter="healthcare" data-key="filterHealthcare">Gesundheitswesen</button>
+                <button class="filter-btn" data-filter="government" data-key="filterGovernment">Öffentlicher Sektor</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Projects -->
+    <main class="portfolio-projects-section">
+        <div class="container">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="finance">
+                <div class="project-image">
+                    <div class="project-badge" data-key="badgeFinance">Finanzwesen</div>
+                    <div class="image-overlay">
+                        <div style="text-align: center; color: white; padding: 2rem;">
+                            <div style="font-size: 4rem;">🏦</div>
+                            <h3 style="margin-top: 1rem;" data-key="project1ImageTitle">Global Banking Platform</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-duration" data-key="durationMonths">12 Monate</span>
+                        <span class="project-team" data-key="teamExperts">8 Experten</span>
+                    </div>
+                    <h2 data-key="project1Title">Multi-Währungs Banking System</h2>
+                    <p class="project-description" data-key="project1Desc">Eine komplette Banking-Plattform für einen globalen Finanzdienstleister, die 20+ Länder mit Echtzeit-Währungsumrechnung, mehrsprachiger Unterstützung und regulatorischer Compliance für jeden Markt bedient.</p>
+                    
+                    <div class="project-challenges">
+                        <h3 data-key="challengesTitle">Herausforderungen</h3>
+                        <ul>
+                            <li data-key="project1Challenge1">Einhaltung unterschiedlicher Finanzregulierungen in 20+ Ländern</li>
+                            <li data-key="project1Challenge2">Echtzeit-Währungsumrechnung mit Millisekunden-Latenz</li>
+                            <li data-key="project1Challenge3">Multi-Sprachige Compliance-Dokumentation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-results">
+                        <h3 data-key="resultsTitle">Ergebnisse</h3>
+                        <div class="results-grid">
+                            <div class="result">
+                                <div class="result-number">99.99%</div>
+                                <div class="result-label" data-key="resultUptime">Uptime</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">45%</div>
+                                <div class="result-label" data-key="resultCostReduction">Kostenreduktion</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">20+</div>
+                                <div class="result-label" data-key="resultCountries">Länder</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">12</div>
+                                <div class="result-label" data-key="resultLanguages">Sprachen</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-technologies">
+                        <h3 data-key="technologiesTitle">Technologien</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary" data-key="viewCaseStudy">Case Study lesen →</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="ecommerce">
+                <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="project-badge" data-key="badgeEcommerce">E-Commerce</div>
+                    <div class="image-overlay">
+                        <div style="text-align: center; color: white; padding: 2rem;">
+                            <div style="font-size: 4rem;">🛒</div>
+                            <h3 style="margin-top: 1rem;" data-key="project2ImageTitle">Luxury E-Commerce Platform</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year">2022</span>
+                        <span class="project-duration" data-key="durationMonths">10 Monate</span>
+                        <span class="project-team" data-key="teamExperts">6 Experten</span>
+                    </div>
+                    <h2 data-key="project2Title">Global Luxury Retail Platform</h2>
+                    <p class="project-description" data-key="project2Desc">Eine Premium-E-Commerce-Lösung für Luxusmarken mit Unterstützung für 12 Währungen, lokalisierte Zahlungsmethoden und KI-gestützte Personalisierung für jeden Markt.</p>
+                    
+                    <div class="project-challenges">
+                        <h3 data-key="challengesTitle">Herausforderungen</h3>
+                        <ul>
+                            <li data-key="project2Challenge1">Integration von 40+ lokalen Zahlungsanbietern</li>
+                            <li data-key="project2Challenge2">Echtzeit-Steuerberechnung für 43 Länder</li>
+                            <li data-key="project2Challenge3">KI-gestützte Produktempfehlungen in 12 Sprachen</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-results">
+                        <h3 data-key="resultsTitle">Ergebnisse</h3>
+                        <div class="results-grid">
+                            <div class="result">
+                                <div class="result-number">3x</div>
+                                <div class="result-label" data-key="resultGrowth">Wachstum</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">43</div>
+                                <div class="result-label" data-key="resultMarkets">Märkte</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">85ms</div>
+                                <div class="result-label" data-key="resultLoadTime">Ladezeit</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">12</div>
+                                <div class="result-label" data-key="resultCurrencies">Währungen</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-technologies">
+                        <h3 data-key="technologiesTitle">Technologien</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">AWS Lambda</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary" data-key="viewCaseStudy">Case Study lesen →</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="enterprise">
+                <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="project-badge" data-key="badgeEnterprise">Enterprise</div>
+                    <div class="image-overlay">
+                        <div style="text-align: center; color: white; padding: 2rem;">
+                            <div style="font-size: 4rem;">🏢</div>
+                            <h3 style="margin-top: 1rem;" data-key="project3ImageTitle">Enterprise CRM Suite</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-duration" data-key="durationMonths">14 Monate</span>
+                        <span class="project-team" data-key="teamExperts">12 Experten</span>
+                    </div>
+                    <h2 data-key="project3Title">Global CRM für Fortune 500 Unternehmen</h2>
+                    <p class="project-description" data-key="project3Desc">Maßgeschneiderte CRM-Lösung für einen multinationalen Konzern mit 5000+ Benutzern, KI-gestützter Analytik, mehrsprachigen Schnittstellen und Echtzeit-Kollaborationstools.</p>
+                    
+                    <div class="project-challenges">
+                        <h3 data-key="challengesTitle">Herausforderungen</h3>
+                        <ul>
+                            <li data-key="project3Challenge1">Migration von Legacy-Systemen ohne Downtime</li>
+                            <li data-key="project3Challenge2">Integration mit 15+ bestehenden Enterprise-Systemen</li>
+                            <li data-key="project3Challenge3">Datenkonformität nach GDPR, CCPA und lokalen Vorschriften</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-results">
+                        <h3 data-key="resultsTitle">Ergebnisse</h3>
+                        <div class="results-grid">
+                            <div class="result">
+                                <div class="result-number">5000+</div>
+                                <div class="result-label" data-key="resultUsers">Benutzer</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">67%</div>
+                                <div class="result-label" data-key="resultEfficiency">Effizienzsteigerung</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">0</div>
+                                <div class="result-label" data-key="resultDowntime">Downtime</div>
+                            </div>
+                            <div class="result">
+                                <div class="result-number">8</div>
+                                <div class="result-label" data-key="resultLanguages">Sprachen</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-technologies">
+                        <h3 data-key="technologiesTitle">Technologien</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">OpenAI</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary" data-key="viewCaseStudy">Case Study lesen →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Testimonials -->
+    <section class="portfolio-testimonials">
+        <div class="container">
+            <h2 data-key="testimonialsTitle">Was unsere Kunden sagen</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-key="testimonial1">"GLOBALEX hat unsere globale Banking-Plattform in Rekordzeit implementiert. Die mehrsprachige Unterstützung war entscheidend für unseren Erfolg in 20+ Märkten."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JB</div>
+                        <div class="author-info">
+                            <div class="author-name" data-key="testimonialAuthor1">John Bauer</div>
+                            <div class="author-title" data-key="testimonialTitle1">CTO, Global Finance Corp</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-key="testimonial2">"Die kulturelle Anpassung ihrer Lösungen hat unseren Umsatz in asiatischen Märkten um 300% gesteigert. Echte Experten für globale Expansion."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MS</div>
+                        <div class="author-info">
+                            <div class="author-name" data-key="testimonialAuthor2">Maria Schmidt</div>
+                            <div class="author-title" data-key="testimonialTitle2">CEO, Luxury Brands Group</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-key="testimonial3">"Die Performance-Optimierung durch ihr Edge-Netzwerk hat unsere Ladezeiten weltweit unter 100ms gebracht. Beeindruckende Technologie-Expertise."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TK</div>
+                        <div class="author-info">
+                            <div class="author-name" data-key="testimonialAuthor3">Thomas Klein</div>
+                            <div class="author-title" data-key="testimonialTitle3">Head of Digital, Tech Giant Inc</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-key="portfolioCTATitle">Ihr nächstes Erfolgsprojekt?</h2>
+                <p data-key="portfolioCTASubtitle">Lassen Sie uns über Ihre Vision sprechen und gemeinsam eine Lösung entwickeln, die weltweit Maßstäbe setzt.</p>
+                <a href="contact.html" class="btn btn-primary btn-large" data-key="ctaButton">Projekt besprechen →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">◈ GLOBALEX</div>
+                    <p class="tagline" data-key="footerTagline">Sovereign Digital Architecture</p>
+                    <div class="social-links">
+                        <a href="#" class="social" data-key="socialLinkedIn">LinkedIn</a>
+                        <a href="#" class="social" data-key="socialTwitter">Twitter</a>
+                        <a href="#" class="social" data-key="socialGitHub">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerServices">Leistungen</h4>
+                    <a href="services.html#architecture" data-key="service1Title">Enterprise Architektur</a>
+                    <a href="services.html#multilingual" data-key="service2Title">Multilinguale Systeme</a>
+                    <a href="services.html#performance" data-key="service3Title">Performance Optimierung</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerCompany">Unternehmen</h4>
+                    <a href="about.html" data-key="navAbout">Über uns</a>
+                    <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                    <a href="blog.html" data-key="navBlog">Blog</a>
+                    <a href="contact.html" data-key="navContact">Kontakt</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footerContact">Kontakt</h4>
+                    <p>contact@globalex.digital</p>
+                    <p>+49 30 12345678</p>
+                    <p data-key="footerAddress">Berlin, Deutschland</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-key="copyright">© 2024 GLOBALEX Digital. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#" data-key="footerPrivacy">Datenschutz</a>
+                    <a href="#" data-key="footerTerms">AGB</a>
+                    <a href="#" data-key="footerImprint">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ========== DİL YÖNETİMİ ==========
+            const translations = window.translations || {};
+            const flags = { 'de': '🇩🇪', 'en': '🇬🇧', 'tr': '🇹🇷', 'ru': '🇷🇺' };
+            
+            let currentLang = localStorage.getItem('selectedLang') || 'de';
+            
+            function translatePage(lang) {
+                if(!translations[lang]) return;
+                
+                const dict = translations[lang];
+                document.documentElement.lang = lang;
+                
+                document.querySelectorAll('[data-key]').forEach(el => {
+                    const key = el.getAttribute('data-key');
+                    if(dict[key]) {
+                        if(el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                            if(el.placeholder) el.placeholder = dict[key];
+                        } else {
+                            el.innerHTML = dict[key];
+                        }
+                    }
+                });
+                
+                const currentLangBtn = document.getElementById('currentLang');
+                if(currentLangBtn) {
+                    currentLangBtn.innerHTML = `
+                        <span class="flag">${flags[lang] || '🇩🇪'}</span>
+                        <span>${lang.toUpperCase()}</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                        </svg>
+                    `;
+                }
+            }
+            
+            translatePage(currentLang);
+            
+            setTimeout(() => {
+                const loader = document.getElementById('languageLoader');
+                if(loader) loader.classList.add('hidden');
+            }, 500);
+            
+            // ========== DİL SEÇİCİ ==========
+            const langSelector = document.querySelector('.language-selector');
+            const currentLangBtn = document.getElementById('currentLang');
+            
+            if(currentLangBtn) {
+                currentLangBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langSelector.classList.toggle('open');
+                });
+            }
+            
+            document.querySelectorAll('.dropdown button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    if(lang) {
+                        localStorage.setItem('selectedLang', lang);
+                        translatePage(lang);
+                        langSelector.classList.remove('open');
+                    }
+                });
+            });
+            
+            document.addEventListener('click', function(e) {
+                if(langSelector && !langSelector.contains(e.target)) {
+                    langSelector.classList.remove('open');
+                }
+            });
+            
+            // ========== MOBİL MENÜ ==========
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if(menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                    
+                    if(navMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
+            
+            // ========== SCROLL NAVBAR ==========
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('.main-nav');
+                if(window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // ========== PORTFOLIO FILTER ==========
+            document.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    document.querySelectorAll('.project-card').forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

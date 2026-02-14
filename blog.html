@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | GLOBALEX Digital</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>">
+
+    <script src="translations.js"></script>
+</head>
+<body>
+    <div class="language-loader" id="languageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">◈ GLOBALEX</div>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">GLOBALEX</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" data-key="navHome">Start</a>
+                <a href="services.html" data-key="navServices">Leistungen</a>
+                <a href="portfolio.html" data-key="navPortfolio">Portfolio</a>
+                <a href="blog.html" class="active" data-key="navBlog">Blog</a>
+                <a href="about.html" data-key="navAbout">Über uns</a>
+                <a href="contact.html" data-key="navContact">Kontakt</a>
+                
+                <div class="language-selector">
+                    <button class="current-lang" id="currentLang">
+                        <span class="flag">🇩🇪</span>
+                        <span>DE</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown">
+                        <button data-lang="de"><span class="flag">🇩🇪</span> <span>Deutsch</span></button>
+                        <button data-lang="en"><span class="flag">🇬🇧</span> <span>English</span></button>
+                        <button data-lang="tr"><span class="flag">🇹🇷</span> <span>Türkçe</span></button>
+                        <button data-lang="ru"><span class="flag">🇷🇺</span> <span>Русский</span></button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <h1 data-key="blogPageTitle">Blog & Insights</h1>
+        <p data-key="blogPageSubtitle">Expertenwissen über digitale Souveränität...</p>
+    </header>
+
+    <main class="container">
+        <div class="categories" id="categories">
+            <button class="category-btn active" data-category="all" data-key="categoryAll">Alle Artikel</button>
+            <button class="category-btn" data-category="Technologie" data-key="categoryTech">Technologie</button>
+            <button class="category-btn" data-category="Strategie" data-key="categoryStrategy">Strategie</button>
+            <button class="category-btn" data-category="Case Studies" data-key="categoryCaseStudies">Case Studies</button>
+            <button class="category-btn" data-category="Sicherheit & Compliance" data-key="categorySecurity">Sicherheit</button>
+        </div>
+
+        <div id="loading" class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <div id="featuredContainer"></div>
+
+        <div id="blogGrid" class="blog-grid"></div>
+
+        <section class="newsletter">
+            <h2 data-key="newsletterTitle">Bleiben Sie informiert</h2>
+            <p data-key="newsletterDesc">Abonnieren Sie unseren Newsletter...</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" data-key="emailPlaceholder" placeholder="Ihre E-Mail-Adresse" required>
+                <button type="submit" data-key="subscribeBtn">Abonnieren</button>
+            </form>
+            <p class="privacy-note" data-key="privacyNote" style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">Datenschutz...</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">◈ GLOBALEX</div>
+                    <p class="tagline" data-key="footerTagline">Sovereign Digital Architecture</p>
+                    <div class="social-links">
+                        <a href="#" class="social" data-key="socialLinkedIn">LinkedIn</a>
+                        <a href="#" class="social" data-key="socialTwitter">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="footerServices">Leistungen</h4>
+                    <a href="services.html#architecture" data-key="service1Title">Enterprise Architektur</a>
+                    <a href="services.html#multilingual" data-key="service2Title">Multilinguale Systeme</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="footerCompany">Unternehmen</h4>
+                    <a href="about.html" data-key="navAbout">Über uns</a>
+                    <a href="contact.html" data-key="navContact">Kontakt</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="footerContact">Kontakt</h4>
+                    <p>contact@globalex.digital</p>
+                    <p data-key="footerAddress">Berlin, Deutschland</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright" data-key="copyright">© 2024 GLOBALEX Digital.</p>
+                <div class="footer-links">
+                    <a href="#" data-key="footerPrivacy">Datenschutz</a>
+                    <a href="#" data-key="footerTerms">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "@firebase/app": "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js",
+                "@firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        import { getFirestore, collection, query, orderBy, onSnapshot } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+
+        // Firebase Config
+        const firebaseConfig = {
+            apiKey: "AIzaSyDhr_iR7w1qOs-SwDZ0FhGhF7RIAfiN1kI",
+            authDomain: "havvaabla.firebaseapp.com",
+            projectId: "havvaabla",
+            storageBucket: "havvaabla.firebasestorage.app",
+            messagingSenderId: "783441783764",
+            appId: "1:783441783764:web:faec837359e01baaef8441"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // ========== DİL YÖNETİMİ ==========
+        const translations = window.translations || {};
+        const flags = { 'de': '🇩🇪', 'en': '🇬🇧', 'tr': '🇹🇷', 'ru': '🇷🇺' };
+        
+        let currentLang = localStorage.getItem('selectedLang') || 'de';
+        
+        function translatePage(lang) {
+            if(!translations[lang]) return;
+            
+            const dict = translations[lang];
+            document.documentElement.lang = lang;
+            
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if(dict[key]) {
+                    if(el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = dict[key];
+                    } else {
+                        el.innerHTML = dict[key];
+                    }
+                }
+            });
+            
+            const currentLangBtn = document.getElementById('currentLang');
+            if(currentLangBtn) {
+                currentLangBtn.innerHTML = `
+                    <span class="flag">${flags[lang] || '🇩🇪'}</span>
+                    <span>${lang.toUpperCase()}</span>
+                    <svg width="12" height="8" viewBox="0 0 12 8">
+                        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" fill="none"/>
+                    </svg>
+                `;
+            }
+        }
+        
+        translatePage(currentLang);
+        
+        setTimeout(() => {
+            const loader = document.getElementById('languageLoader');
+            if(loader) loader.classList.add('hidden');
+        }, 500);
+
+        // ========== BLOG SİSTEMİ ==========
+        const blogGrid = document.getElementById('blogGrid');
+        const featuredContainer = document.getElementById('featuredContainer');
+        const loading = document.getElementById('loading');
+        let allPosts = [];
+        let currentCategory = 'all';
+
+        const q = query(collection(db, "blog_posts"), orderBy("timestamp", "desc"));
+        
+        onSnapshot(q, (snapshot) => {
+            allPosts = [];
+            snapshot.forEach(doc => {
+                allPosts.push({ id: doc.id, ...doc.data() });
+            });
+            loading.style.display = 'none';
+            renderPosts();
+            translatePage(currentLang); // Tekrar çevir
+        });
+
+        function renderPosts() {
+            let filtered = allPosts;
+            if (currentCategory !== 'all') {
+                filtered = filtered.filter(p => p.category === currentCategory);
+            }
+
+            const featured = filtered.find(p => p.featured === true);
+            if (featured) {
+                renderFeatured(featured);
+                filtered = filtered.filter(p => p.id !== featured.id);
+            } else {
+                featuredContainer.innerHTML = '';
+            }
+
+            if (filtered.length === 0 && !featured) {
+                blogGrid.innerHTML = '<div style="padding:40px; text-align:center;">Henüz yazı yok / No posts yet</div>';
+            } else {
+                blogGrid.innerHTML = filtered.map(post => {
+                    const date = post.date ? new Date(post.date).toLocaleDateString() : '';
+                    return `
+                    <div class="blog-card">
+                        <div class="card-image">
+                            ${post.imageUrl 
+                                ? `<img src="${post.imageUrl}" alt="${post.title}">` 
+                                : `<div class="image-placeholder" style="background:${post.imageGradient}">${post.imagePlaceholder || 'Blog'}</div>`}
+                            <span class="category-badge">${post.category}</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="meta">
+                                <span>📅 ${date}</span>
+                                <span>⏱️ ${post.readTime || 5} <span data-key="readTime">Min.</span></span>
+                            </div>
+                            <h2>${post.title}</h2>
+                            <p>${post.excerpt || ''}</p>
+                            <a href="blog-post.html?id=${post.id}" class="read-more" data-key="readMore">Read More →</a>
+                        </div>
+                    </div>`;
+                }).join('');
+            }
+        }
+
+        function renderFeatured(post) {
+            featuredContainer.innerHTML = `
+            <div class="featured-article">
+                <div class="featured-card">
+                    <div class="featured-image">
+                        ${post.imageUrl 
+                            ? `<img src="${post.imageUrl}" alt="${post.title}">` 
+                            : `<div class="image-placeholder" style="background:${post.imageGradient}">${post.imagePlaceholder}</div>`}
+                    </div>
+                    <div class="featured-content">
+                        <div style="display:flex; gap:10px; margin-bottom:15px;">
+                            <span class="category-badge">${post.category}</span>
+                            <span class="featured-badge" data-key="featuredBadge">Featured</span>
+                        </div>
+                        <h2>${post.title}</h2>
+                        <p>${post.excerpt}</p>
+                        <a href="blog-post.html?id=${post.id}" class="read-more" data-key="readMore">Read More →</a>
+                    </div>
+                </div>
+            </div>`;
+        }
+
+        // ========== EVENT LISTENER'LAR ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Kategori Butonları
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentCategory = this.dataset.category;
+                    renderPosts();
+                    translatePage(currentLang);
+                });
+            });
+
+            // Dil Seçici
+            const langSelector = document.querySelector('.language-selector');
+            const currentLangBtn = document.getElementById('currentLang');
+            
+            if(currentLangBtn) {
+                currentLangBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langSelector.classList.toggle('open');
+                });
+            }
+            
+            document.querySelectorAll('.dropdown button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    if(lang) {
+                        localStorage.setItem('selectedLang', lang);
+                        currentLang = lang;
+                        translatePage(lang);
+                        renderPosts(); // Blog kartlarını tekrar çevirmek için
+                        langSelector.classList.remove('open');
+                    }
+                });
+            });
+            
+            document.addEventListener('click', function(e) {
+                if(langSelector && !langSelector.contains(e.target)) {
+                    langSelector.classList.remove('open');
+                }
+            });
+
+            // MOBİL MENÜ
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if(menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                    
+                    if(navMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
+
+            // Scroll navbar
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('.main-nav');
+                if(window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
